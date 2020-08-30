@@ -23,7 +23,7 @@ connection.connect(function(err){
     var values=[itemName,price]
     connection.query(insertCmd,values,function(err,result){
      if(err) throw err;
-     console.log("1 entry recorded!!");
+     console.log("1 entry recorded!");
 
 
 
