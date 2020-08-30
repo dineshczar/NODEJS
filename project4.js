@@ -27,7 +27,7 @@ app.post('/register/',(req,res,next)=>{
 
         });
         if(result && result.length){
-            res.json("user already exists");
+            res.json("users already exists");
         }
         else{
             var insert_cmd ="INSERT INTO login_info(user,email,password,phonenumber,DOB) values(?,?,?,?,?)";
