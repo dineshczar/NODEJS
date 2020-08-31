@@ -16,8 +16,8 @@ connection.connect(function(err){
     if (err) throw err;
     console.log("connected!!");
 
-    var itemName="adidas ";
-    var price="$100cad";
+    var itemName="versace ";
+    var price="$1000CAD";
    
     var insertCmd="INSERT INTO order_info(itemName,price) values(?,?)";
     var values=[itemName,price]
