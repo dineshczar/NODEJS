@@ -38,7 +38,7 @@ app.post('/register/',(req,res,next)=>{
                   console.log('[MYSQL ERROR]',err);
               });
               res.json("Registered!!"); 
-              console.log("registration successfull");
+              console.log("registration successfull !!");
 
             });
         }
@@ -59,16 +59,16 @@ app.post('/register/',(req,res,next)=>{
             console.log(result);
 
             if (password == result[0].password){
-                res.json("user logged in");
+                res.json("user logged in !!");
                 res.end;
 
             }else{
-                res.json("wrong password");
+                res.json("wrong password !!");
                 res.end;
             }
         }
         else{
-            res.json("user not found");
+            res.json("user not found !!");
             res.end;
 
         }
