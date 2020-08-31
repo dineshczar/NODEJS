@@ -14,7 +14,7 @@ var connection =mysql.createConnection({
 connection.connect(function(err){
 
     if (err) throw err;
-    console.log("connected!!");
+    console.log("connected!!!");
 
     var itemName="versace ";
     var price="$1000CAD";
