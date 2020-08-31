@@ -14,16 +14,16 @@ var connection =mysql.createConnection({
 connection.connect(function(err){
 
     if (err) throw err;
-    console.log("connected!!!");
+    console.log("connected!");
 
-    var itemName="dolce and gabbanna ";
-    var price="$1000CAD";
+    var itemName="reebook";
+    var price="$199CAD";
    
     var insertCmd="INSERT INTO order_info(itemName,price) values(?,?)";
     var values=[itemName,price]
     connection.query(insertCmd,values,function(err,result){
      if(err) throw err;
-     console.log("1 entry recorded!");
+     console.log("1 entry recorded!!");
 
 
 
